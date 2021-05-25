@@ -1,0 +1,4 @@
+
+interface Cart {
+  calculateTotal(): number;
+}

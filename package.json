@@ -1,0 +1,24 @@
+{
+  "name": "simple-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "nodemon",
+    "start:watch": "nodemon -w dist -q dist/**/*",
+    "dev": "yarn concurrently -k -n COMPILER,NODEMON -c yellow,blue 'yarn build:watch' 'yarn start:watch'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
